@@ -3,6 +3,7 @@ import { WorkshopController } from './workshop.controller';
 import { MICROSERVICES_CLIENTS } from '../../../../utils';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import { AuthController } from './auth.controller';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -23,6 +24,6 @@ import { AuthController } from './auth.controller';
       },
     ]),
   ],
-  controllers: [WorkshopController,AuthController],
+  controllers: [WorkshopController,AuthController,AppController],
 })
 export class AppModule {}
