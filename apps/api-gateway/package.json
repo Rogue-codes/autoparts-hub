@@ -49,7 +49,7 @@
         "dependsOn": [
           "build"
         ],
-        "command": "docker build -f apps/my-ladipo/Dockerfile . -t my-ladipo-my-ladipo"
+        "command": "docker build -f apps/api-gateway/Dockerfile . -t my-ladipo-api-gateway"
       }
     }
   }
